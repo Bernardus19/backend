@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pantryController = require('../controllers/pantryController');
+const pantryController = require('../controllers/pantrycontroller');
 const { verifyToken } = require('../middleware/auth');
 
 router.get('/', verifyToken, pantryController.getAll);

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const opportunityCostController = require('../controllers/opportunityCostController');
+const opportunityCostController = require('../controllers/opportunitycostcontroller');
 const { verifyToken } = require('../middleware/auth');
 
 router.get('/', verifyToken, opportunityCostController.getAll);

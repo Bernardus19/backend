@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const itemsController = require('../controllers/itemsController');
+const itemsController = require('../controllers/itemscontroller');
 const { verifyToken } = require('../middleware/auth');
 
 router.get('/:list_id', verifyToken, itemsController.getByList);
